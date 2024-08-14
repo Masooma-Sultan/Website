@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #08394d;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+}
+
+.scroll-section {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.scroll-section:nth-of-type(1) {
+    background-image: url('din.jpg');
+}
+
+.scroll-section:nth-of-type(2) {
+    background-image: url('out.jpg');
+}
+
+.scroll-section:nth-of-type(3) {
+    background-image: url('envi.jpg');
+}
+.scroll-section:nth-of-type(4) {
+    background-image: url('hands.jpg');
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.scroll-section.in-view .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#discounts {
+    background-color: #1f3a4c;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#discounts h2 {
+    margin-top: 0;
+}
+
+#discounts p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #1a6365;
+    color: #fffafa;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .scroll-section {
+        padding: 10px;
+    }
+
+    .overlay {
+        padding: 15px;
+    }
+
+    #discounts {
+        padding: 15px;
+    }
+}
+.work {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    background-color: #60adff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.work:hover {
+    background-color: #0a59af;
+}

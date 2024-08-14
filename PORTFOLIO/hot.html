@@ -1,0 +1,33 @@
+<script src="script.js"></script>
+<button class="work" onclick="work()">BACK</button>
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search for items...">
+</div>
+
+
+
+<link rel="stylesheet" href="style.css">
+    <div class="menu">
+        <div class="menu-item" id="hot-item1">
+            <img src="tea.jpg" alt="Hot Item 1">
+            <h3>TEA</h3>
+            <p>Price: $5</p>
+            <button class="add-to-order" onclick="addToOrder('hot-item1', 'Hot Item 1', 5)">Add to Order</button>
+        </div>
+        <div class="menu-item" id="hot-item2">
+            <img src="cofee.jpg" alt="Hot Item 2">
+            <h3>COFFEE</h3>
+            <p>Price: $4</p>
+            <button class="add-to-order" onclick="addToOrder('hot-item2', 'Hot Item 2', 4)">Add to Order</button>
+        </div>
+        <!-- Add more hot drinks items as needed -->
+    </div>
+
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div id="order-list">
+            <p>Select from our menu.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>

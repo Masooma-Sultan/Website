@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER</title>
+</head>
+<script src="script.js"></script>
+<button class="work" onclick="work()">BACK</button>
+<style>
+  body{
+    background-color: grey;
+  }
+    .container {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #09ffa9;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; /* Center horizontally */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.container:hover {
+  background-color: #07cc88;
+  transform: scale(1.05);
+}
+
+
+.container:hover {
+  background-color: #007a4f;
+  transform: scale(1.05);
+}
+
+    .red{
+        padding: 10px 20px;
+  font-size: 16px;
+  background-color: #6045ab;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .red:hover {
+  background-color: #af99ea;
+  transform: scale(1.05);
+}
+    .work{
+        padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3298ec;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .work:hover {
+  background-color: #93caf7;
+  transform: scale(1.05);
+}
+.pay{
+        padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 183);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .pay:hover {
+  background-color: rgb(255, 255, 0);
+  transform: scale(1.05);
+}
+.tri{
+        padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(233, 189, 124);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .tri:hover {
+  background-color: rgb(255, 68, 0);
+  transform: scale(1.05);
+}
+
+</style>
+<body>
+    <div>
+        <button class="container">your items</button>
+        <button class="red" onclick="bill()">YOUR BILLS</button>
+        <button class="tri" onclick="control()">PLACE ORDER</button>
+        <button class="pay" onclick="pay()">SELECT YOUR PAYMENT METHOOD</button>
+    </div> 
+</body>
+</html>
